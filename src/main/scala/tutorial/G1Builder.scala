@@ -3,16 +3,18 @@ package tutorial
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.graphx.{Edge, Graph, _}
 import org.apache.spark.rdd.RDD
-
+import org.apache.log4j.{Level, Logger}
 /**
   * Created by cxa123230 on 10/26/2016.
   */
 class G1Builder {
 
   def createToyGraph(): Graph[(String, String), String] ={
+
     val conf = new SparkConf().setMaster("local[2]").setAppName("Disagio")
 
     val sc = new SparkContext(conf)
+    Logger.getRootLogger().setLevel(Level.ERROR)
     // Create an RDD for the vertices
     val users: RDD[(VertexId, (String, String))] =
     sc.parallelize(Array((3L, ("rxin", "student")), (7L, ("jgonzal", "postdoc")),
