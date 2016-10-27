@@ -7,10 +7,10 @@ import org.apache.spark.graphx.{Edge, EdgeTriplet, Graph}
 /**
   * Created by cxa123230 on 10/26/2016.
   */
-object G1TutorialGraphOps {
+object GraphXTutorial3GraphOps {
   def main(args: Array[String]): Unit = {
 
-    val graph:Graph[(String, String), String] = new G1Builder().createToyGraph
+    val graph:Graph[(String, String), String] = new GraphXTutorial0Builder().createToyGraph
     val graph2:Graph[(String, String), Int] = graph.mapTriplets(triplet => triplet.srcAttr._1.length)
     val t1: Array[Edge[Int]] = graph2.edges.take(1)
 

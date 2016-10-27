@@ -7,7 +7,7 @@ import org.apache.log4j.{Level, Logger}
 /**
   * Created by cxa123230 on 10/26/2016.
   */
-class G1Builder {
+class GraphXTutorial0Builder {
 
   def createToyGraph(): Graph[(String, String), String] ={
 

@@ -7,7 +7,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
   * Created by cxa123230 on 10/26/2016.
   */
-object G1TutorialTriplets {
+object GraphXTutorial2Triplets {
 
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setMaster("local[2]").setAppName("Disagio")
