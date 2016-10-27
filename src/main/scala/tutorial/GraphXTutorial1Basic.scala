@@ -11,7 +11,7 @@ class VertexProperty()
 case class UserProperty(val name: String) extends VertexProperty
 case class ProductProperty(val name: String, val price: Double) extends VertexProperty
 
-object G1TutorialBasic {
+object GraphXTutorial1Basic {
 
   // The graph might then have the type:
 
