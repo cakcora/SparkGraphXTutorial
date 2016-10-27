@@ -7,7 +7,7 @@ import org.apache.spark.rdd.RDD
 /**
   * Created by cxa123230 on 10/26/2016.
   */
-class G1Create {
+class G1Builder {
 
   def createToyGraph(): Graph[(String, String), String] ={
     val conf = new SparkConf().setMaster("local[2]").setAppName("Disagio")
