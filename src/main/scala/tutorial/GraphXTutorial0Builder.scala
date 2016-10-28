@@ -25,4 +25,19 @@ class GraphXTutorial0Builder {
     val graph = Graph(users, relationships,defaultUser)
     graph
   }
+  def createNumericToyGraph(sc:SparkContext): Graph[VertexId, Double] ={
+
+
+    // Create an RDD for the vertices
+    val users: RDD[(Long,Long )] =
+    sc.parallelize(Array((3L, (1L)), (7L, (2L)),
+      (5L, (3L)), (2L, (4L))))
+    // Create an RDD for edges
+    val relationships: RDD[Edge[Double]] =
+    sc.parallelize(Array(Edge(3L, 7L, 1.0),    Edge(5L, 3L, 2.0),
+      Edge(2L, 5L, 3.0), Edge(5L, 7L, 4.0)))
+    // Build the initial Graph
+    val graph = Graph(users, relationships)
+    graph
+  }
 }
