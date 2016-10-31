@@ -37,10 +37,10 @@ object GraphXTutorial9Builders {
     tupleGraph.edges.foreach(println)
     println("Note that the duplicate edge 7->5 is indicated with Edge(7,5,2)")
 
-    println("The last method is to use the graph loader class and give it an edge list:")
+    println("The last method is to use the graph loader class and give it an edge list in a file:")
     val graph = GraphLoader.edgeListFile(sc,"src/main/resources/dblpgraph.txt")
 
-    println("graph has "+graph.numVertices+" vertices and "+graph.numEdges+" edges")
+    println("Graph has "+graph.numVertices+" vertices and "+graph.numEdges+" edges")
 
   }
 }
