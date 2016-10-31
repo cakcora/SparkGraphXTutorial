@@ -1,7 +1,6 @@
 package tutorial
 
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.graphx.util.GraphGenerators
 import org.apache.spark.graphx.{Graph, VertexId}
 import org.apache.spark.sql.SparkSession
 /**
