@@ -28,9 +28,7 @@ object GraphXTutorial7DegreeAndNeighbors {
     neighbors.foreach(a=>{
       val str2 = a._2.toList.toString()
       println(a._1+" "+ str2);
-
     })
-
   }
 
   def max(a: (VertexId, Int), b: (VertexId, Int)): (VertexId, Int) = {

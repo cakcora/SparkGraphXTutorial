@@ -51,4 +51,18 @@ class GraphXTutorial0Builder {
     val graph = Graph(users, relationships)
     graph
   }
+  def createLongToyGraph(sc:SparkContext): Graph[Long, Double] ={
+    // Create an RDD for the vertices
+     val dummyInt:Long = 4
+    val users: RDD[(Long,Long )] =
+    sc.parallelize(Array((0L, dummyInt), (1L, dummyInt),
+      (2L, dummyInt), (3L, dummyInt),(4L, dummyInt),(5L,dummyInt)))
+    // Create an RDD for edges
+    val dummyDouble:Double = 1.0
+    val relationships: RDD[Edge[Double]] =
+    sc.parallelize(Array(    Edge(4L, 1L, dummyDouble),
+      Edge(4L, 3L, dummyDouble), Edge(3L, 2L, dummyDouble), Edge(1L, 2L, dummyDouble), Edge(2L, 5L, dummyDouble)))
+    // Build the initial Graph
+     Graph(users, relationships)
+  }
 }
