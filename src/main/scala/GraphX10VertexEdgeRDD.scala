@@ -44,7 +44,7 @@ object GraphX10VertexEdgeRDD {
     val otherEdges:EdgeRDD[Double] = EdgeRDD.fromEdges(sc.parallelize(Array(Edge(1, 2, 7.0),Edge(2,3,1.0))))
 
     val allEdges:EdgeRDD[Double] = edges.innerJoin(otherEdges)((edge1,edge2,edgeAtt1,edgeAtt2)=>if(edgeAtt1>edgeAtt2)edgeAtt1 else edgeAtt2)
-    //choose the edge attribute that is bigger
+    //The if clause above chooses the edge attribute that is bigger
     println("Inner join results are:")
     allEdges.foreach(println)
     spark.stop()
