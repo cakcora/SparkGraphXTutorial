@@ -6,7 +6,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
   * Created by cxa123230 on 10/27/2016.
   */
-object GraphXTutorial5JoinOps {
+object GraphX5JoinOps {
 
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setMaster("local[2]").setAppName("Disagio")
