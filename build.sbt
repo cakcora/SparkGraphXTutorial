@@ -1,4 +1,4 @@
-name := "GraphTutorial"
+name := "GraphXTutorial"
 
 version := "1.0"
 
