@@ -5,7 +5,7 @@ import org.apache.spark.sql.SparkSession
 /**
   * Created by cxa123230 on 11/1/2016.
   */
-object GraphXTutorial12GraphOpsComponent {
+object GraphX12GraphOpsComponent {
 
   def main(args: Array[String]): Unit = {
     val spark = SparkSession

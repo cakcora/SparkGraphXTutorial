@@ -4,7 +4,7 @@ import org.apache.spark.sql.SparkSession
 /**
   * Created by cxa123230 on 11/1/2016.
   */
-object GraphXTutorial13GraphOpsTriangle {
+object GraphX13GraphOpsTriangle {
 
   def main(args: Array[String]): Unit = {
 

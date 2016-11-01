@@ -4,7 +4,7 @@ import org.apache.spark.sql.SparkSession
 /**
   * Created by cxa123230 on 10/31/2016.
   */
-object GraphXTutorial8Pregel {
+object GraphX8Pregel {
   def main(args: Array[String]): Unit = {
 
     val spark = SparkSession
@@ -17,7 +17,7 @@ object GraphXTutorial8Pregel {
     // A graph with edge attributes containing distances
     val graph: Graph[Long, Double] =
 //    GraphGenerators.logNormalGraph(sc, numVertices = 10).mapEdges(e => e.attr.toDouble)
-    new GraphXTutorial0Builder().createLongToyGraph(sc)
+    new GraphX0Builder().createLongToyGraph(sc)
     val sourceId: VertexId = 4 // The ultimate source
     // Initialize the graph such that all vertices except the root have distance infinity.
     val initialGraph = graph.mapVertices((id, _) =>

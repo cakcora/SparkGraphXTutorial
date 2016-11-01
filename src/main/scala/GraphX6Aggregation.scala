@@ -5,7 +5,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
   * Created by cxa123230 on 10/28/2016.
   */
-object GraphXTutorial6Aggregation {
+object GraphX6Aggregation {
 
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setMaster("local[2]").setAppName("Disagio")
@@ -14,7 +14,7 @@ object GraphXTutorial6Aggregation {
     Logger.getRootLogger().setLevel(Level.ERROR)
     val graph: Graph[Double, Int] =
 //      GraphGenerators.logNormalGraph(sc, numVertices = 4).mapVertices( (id, _) => id.toDouble )
-      new GraphXTutorial0Builder().createIntToyGraph(sc)
+      new GraphX0Builder().createIntToyGraph(sc)
     // Compute the number of older followers and their total age
     println("vertices are:")
     graph.vertices.foreach(println)

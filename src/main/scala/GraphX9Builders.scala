@@ -6,7 +6,7 @@ import org.apache.spark.sql.SparkSession
 /**
   * Created by cxa123230 on 10/31/2016.
   */
-object GraphXTutorial9Builders {
+object GraphX9Builders {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession
       .builder
@@ -18,7 +18,7 @@ object GraphXTutorial9Builders {
 
     println("The most basic graph can be created by giving an array of vertices" +
       "and and array of edges. Check Graph(users, relationships) in Tutorial0Builder.scala:")
-    val primitiveGraph = new GraphXTutorial0Builder().createIntToyGraph(sc);
+    val primitiveGraph = new GraphX0Builder().createIntToyGraph(sc);
 
     println("Another option is to create a graph from edges:")
     val arr: RDD[Edge[Int]] = sc.parallelize(Array(Edge(7L, 3L, 21), Edge(5L, 3L, 15),

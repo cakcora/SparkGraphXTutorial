@@ -6,7 +6,7 @@ import org.apache.spark.sql.SparkSession
 /**
   * Created by cxa123230 on 10/31/2016.
   */
-object GraphXTutorial10VertexEdgeRDD {
+object GraphX10VertexEdgeRDD {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession
       .builder

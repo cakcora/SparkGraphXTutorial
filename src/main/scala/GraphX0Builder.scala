@@ -4,7 +4,7 @@ import org.apache.spark.rdd.RDD
 /**
   * Created by cxa123230 on 10/26/2016.
   */
-class GraphXTutorial0Builder {
+class GraphX0Builder {
 
   def createToyGraph(sc:SparkContext): Graph[(String, String), String] ={
 

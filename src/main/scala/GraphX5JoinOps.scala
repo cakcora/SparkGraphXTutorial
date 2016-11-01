@@ -13,7 +13,7 @@ object GraphX5JoinOps {
 
     val sc = new SparkContext(conf)
     Logger.getRootLogger().setLevel(Level.ERROR)
-    val graph:Graph[Double, Double] = new GraphXTutorial0Builder().createDoubleToyGraph(sc)
+    val graph:Graph[Double, Double] = new GraphX0Builder().createDoubleToyGraph(sc)
     println("graph vertices:")
     graph.vertices.foreach(println)
     println("graph edges:")

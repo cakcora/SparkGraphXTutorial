@@ -6,13 +6,13 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
   * Created by cxa123230 on 10/27/2016.
   */
-object GraphXTutorial4GraphStructures {
+object GraphX4GraphStructures {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setMaster("local[2]").setAppName("Disagio")
 
     val sc = new SparkContext(conf)
     Logger.getRootLogger().setLevel(Level.ERROR)
-    val graph:Graph[(String, String), String] = new GraphXTutorial0Builder().createToyGraph(sc)
+    val graph:Graph[(String, String), String] = new GraphX0Builder().createToyGraph(sc)
     graph.triplets.map(
       triplet => triplet.srcAttr._1 +"("+triplet.srcAttr._2+") is the " + triplet.attr + " of " + triplet.dstAttr._1+"("+triplet.dstAttr._2+")"
     ).collect.foreach(println(_))

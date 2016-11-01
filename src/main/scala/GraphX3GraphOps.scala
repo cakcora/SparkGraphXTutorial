@@ -5,13 +5,13 @@
 /**
   * Created by cxa123230 on 10/26/2016.
   */
-object GraphXTutorial3GraphOps {
+object GraphX3GraphOps {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setMaster("local[2]").setAppName("Disagio")
 
     val sc = new SparkContext(conf)
     Logger.getRootLogger().setLevel(Level.ERROR)
-    val graph:Graph[(String, String), String] = new GraphXTutorial0Builder().createToyGraph(sc)
+    val graph:Graph[(String, String), String] = new GraphX0Builder().createToyGraph(sc)
     val graph2:Graph[(String, String), Int] = graph.mapTriplets(triplet => triplet.srcAttr._1.length)
     val t1: Array[Edge[Int]] = graph2.edges.take(1)
 

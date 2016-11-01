@@ -5,7 +5,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
   * Created by cxa123230 on 10/29/2016.
   */
-object GraphXTutorial7DegreeAndNeighbors {
+object GraphX7DegreeAndNeighbors {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setMaster("local[2]").setAppName("Disagio")
 
@@ -14,7 +14,7 @@ object GraphXTutorial7DegreeAndNeighbors {
 //    val graph = GraphLoader.edgeListFile(sc,"src/main/resources/dblpgraph.txt")
     val graph: Graph[Double, Int] =
     //      GraphGenerators.logNormalGraph(sc, numVertices = 4).mapVertices( (id, _) => id.toDouble )
-      new GraphXTutorial0Builder().createIntToyGraph(sc)
+      new GraphX0Builder().createIntToyGraph(sc)
     // Compute the max degrees
     val maxInDegree: (VertexId, Int)  = graph.inDegrees.reduce(max)
     val maxOutDegree: (VertexId, Int) = graph.outDegrees.reduce(max)
