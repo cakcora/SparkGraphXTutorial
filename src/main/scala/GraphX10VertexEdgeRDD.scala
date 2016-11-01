@@ -41,7 +41,6 @@ object GraphX10VertexEdgeRDD {
     println("So :( it does not omit duplicates like VertexRDD. When reversed:")
     edges.reverse.foreach(println) // note that edges changed, they are inverted now.
 
-//    edges.reverse.foreach(a=>a)//back to the original edges
     val otherEdges:EdgeRDD[Double] = EdgeRDD.fromEdges(sc.parallelize(Array(Edge(1, 2, 7.0),Edge(2,3,1.0))))
 
     val allEdges:EdgeRDD[Double] = edges.innerJoin(otherEdges)((edge1,edge2,edgeAtt1,edgeAtt2)=>if(edgeAtt1>edgeAtt2)edgeAtt1 else edgeAtt2)
