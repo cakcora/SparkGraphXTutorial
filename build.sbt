@@ -1,4 +1,4 @@
-name := "DisagioTest"
+name := "GraphTutorial"
 
 version := "1.0"
 
