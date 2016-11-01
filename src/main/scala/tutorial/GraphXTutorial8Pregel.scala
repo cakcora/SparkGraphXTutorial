@@ -44,5 +44,6 @@ object GraphXTutorial8Pregel {
     "node 0 is not connected to the graph, its distance is infinity")
 
     println(sssp.vertices.collect.mkString("\n"))
+    spark.stop()
   }
 }

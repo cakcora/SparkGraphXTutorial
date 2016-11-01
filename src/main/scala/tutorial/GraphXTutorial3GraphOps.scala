@@ -51,7 +51,7 @@ object GraphXTutorial3GraphOps {
     println("Notice how Edge(3,7,collab) became Edge(3,7,6.0)")
     println("Summary:If you need to change vertex atts, use mapVertices, if you need to change edge attributes use mapEdges.")
     println("if you need to change edge attributes while using vertex attributes, use mapTriplets ")
-
+    sc.stop()
 
   }
 }

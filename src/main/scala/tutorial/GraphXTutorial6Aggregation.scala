@@ -49,5 +49,6 @@ object GraphXTutorial6Aggregation {
     // Display the results
     avgAgeOfOlderFollowers.collect.foreach(println)
     println("Results show that the third vertex had two older neighbors 5, and 7. their average is 6.0.")
+    sc.stop()
   }
 }

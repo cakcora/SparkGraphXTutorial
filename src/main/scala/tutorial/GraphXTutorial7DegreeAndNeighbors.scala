@@ -1,6 +1,7 @@
 package tutorial
 
 import org.apache.log4j.{Level, Logger}
+import org.apache.spark
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.graphx.{EdgeDirection, Graph, GraphLoader, VertexId}
 
@@ -29,6 +30,7 @@ object GraphXTutorial7DegreeAndNeighbors {
       val str2 = a._2.toList.toString()
       println(a._1+" "+ str2);
     })
+    sc.stop()
   }
 
   def max(a: (VertexId, Int), b: (VertexId, Int)): (VertexId, Int) = {

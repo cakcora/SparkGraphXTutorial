@@ -41,6 +41,6 @@ object GraphXTutorial9Builders {
     val graph = GraphLoader.edgeListFile(sc,"src/main/resources/dblpgraph.txt")
 
     println("Graph has "+graph.numVertices+" vertices and "+graph.numEdges+" edges")
-
+    spark.stop()
   }
 }

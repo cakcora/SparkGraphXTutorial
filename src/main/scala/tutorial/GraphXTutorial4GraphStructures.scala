@@ -42,6 +42,7 @@ object GraphXTutorial4GraphStructures {
     val newGraph2 = maskGraph.mask(graph)
     newGraph2.vertices.foreach(println)
     newGraph2.edges.foreach(println)
+    sc.stop()
   }
 
   def maskedGraph(sc:SparkContext): Graph[(String, String), String] ={

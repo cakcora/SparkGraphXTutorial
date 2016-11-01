@@ -50,6 +50,7 @@ object GraphXTutorial10VertexEdgeRDD {
     //choose the edge attribute that is bigger
     println("Inner join results are:")
     allEdges.foreach(println)
+    spark.stop()
 
   }
 

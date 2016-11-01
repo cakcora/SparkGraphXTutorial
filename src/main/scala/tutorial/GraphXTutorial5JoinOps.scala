@@ -45,6 +45,7 @@ object GraphXTutorial5JoinOps {
       }
     }
     degreeGraph.vertices.foreach(println)
+    sc.stop()
   }
 
 }

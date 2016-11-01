@@ -33,5 +33,6 @@ object GraphXTutorial2Triplets {
         triplet.srcAttr._1 + " is the " + triplet.attr + " of " + triplet.dstAttr._1)
     exp.collect.foreach(println(_))
     facts.collect.foreach(println(_))
+    sc.stop()
   }
 }
