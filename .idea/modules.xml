@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/disagiotest.iml" filepath="$PROJECT_DIR$/.idea/modules/disagiotest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/disagiotest-build.iml" filepath="$PROJECT_DIR$/.idea/modules/disagiotest-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/disagio.iml" filepath="$PROJECT_DIR$/.idea/modules/disagio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/disagio-build.iml" filepath="$PROJECT_DIR$/.idea/modules/disagio-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/main/main.iml" filepath="$PROJECT_DIR$/src/main/main.iml" />
     </modules>
   </component>
 </project>
