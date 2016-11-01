@@ -36,7 +36,7 @@ object GraphXTutorial5JoinOps {
       (id, v1,v2) =>  v1+v2 )
 
     joinedGraph.vertices.foreach(println)
-    println("outer join vertices can change the vertex property type")
+    println("outerjoinvertices can change the vertex property type")
     val outDegrees: VertexRDD[Int] = graph.outDegrees
     val degreeGraph = graph.outerJoinVertices(outDegrees) { (id, oldAttr, outDegOpt) =>
       outDegOpt match {
@@ -45,7 +45,6 @@ object GraphXTutorial5JoinOps {
       }
     }
     degreeGraph.vertices.foreach(println)
-
   }
 
 }
