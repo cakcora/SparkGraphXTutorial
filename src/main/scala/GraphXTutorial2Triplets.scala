@@ -1,5 +1,3 @@
-package tutorial
-
 import org.apache.spark.graphx.{Edge, _}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}

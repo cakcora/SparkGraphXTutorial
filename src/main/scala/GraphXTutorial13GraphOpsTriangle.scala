@@ -1,4 +1,3 @@
-package tutorial
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.graphx.{GraphLoader, PartitionStrategy}
 import org.apache.spark.sql.SparkSession

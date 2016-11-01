@@ -1,9 +1,6 @@
-package tutorial
-
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.graphx.util.GraphGenerators
-import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.graphx.{Graph, VertexRDD}
+import org.apache.spark.{SparkConf, SparkContext}
 
 /**
   * Created by cxa123230 on 10/28/2016.

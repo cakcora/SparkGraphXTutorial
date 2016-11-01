@@ -1,5 +1,3 @@
-package tutorial
-
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.graphx.{Edge, EdgeRDD, VertexId, VertexRDD}
 import org.apache.spark.rdd.RDD

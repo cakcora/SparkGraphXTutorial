@@ -1,9 +1,6 @@
-package tutorial
-
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark
+import org.apache.spark.graphx.{EdgeDirection, Graph, VertexId}
 import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.graphx.{EdgeDirection, Graph, GraphLoader, VertexId}
 
 /**
   * Created by cxa123230 on 10/29/2016.

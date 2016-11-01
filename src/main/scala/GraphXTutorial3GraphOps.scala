@@ -1,10 +1,6 @@
- package tutorial
-
-
-
-import org.apache.log4j.{Level, Logger}
-import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.graphx.{Edge, EdgeTriplet, Graph}
+ import org.apache.log4j.{Level, Logger}
+ import org.apache.spark.graphx.{Edge, Graph}
+ import org.apache.spark.{SparkConf, SparkContext}
 
 /**
   * Created by cxa123230 on 10/26/2016.
