@@ -5,7 +5,7 @@ import org.apache.spark.rdd.RDD
   * Created by cxa123230 on 10/26/2016.
   * This helper class creates graph examples that are used in other classes.
   * This class does not contain any runnable code.
-  * You may continue to study Graph1Basic.scala
+  * You may continue to study Graph1Basic.scala.
   */
 class GraphX0Builder {
 
