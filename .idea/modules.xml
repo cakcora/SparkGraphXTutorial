@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/disagio.iml" filepath="$PROJECT_DIR$/.idea/modules/disagio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/disagio-build.iml" filepath="$PROJECT_DIR$/.idea/modules/disagio-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/graphxtutorial.iml" filepath="$PROJECT_DIR$/.idea/modules/graphxtutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/main/main.iml" filepath="$PROJECT_DIR$/src/main/main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-build.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-build.iml" />
     </modules>
   </component>
 </project>
