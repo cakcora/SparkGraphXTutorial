@@ -17,7 +17,7 @@ object GraphX9Builders {
     Logger.getRootLogger().setLevel(Level.ERROR)
 
     println("The most basic graph can be created by giving an array of vertices" +
-      "and and array of edges. Check Graph(users, relationships) in Tutorial0Builder.scala:")
+      "and and array of edges. Check Graph(users, relationships) in GraphX0Builder.scala:")
     val primitiveGraph = new GraphX0Builder().createIntToyGraph(sc);
 
     println("Another option is to create a graph from edges:")

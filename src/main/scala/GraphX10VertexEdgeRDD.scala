@@ -18,7 +18,7 @@ object GraphX10VertexEdgeRDD {
     val setA: VertexRDD[Int] = VertexRDD(sc.parallelize(0L until 10L).map(id => (id, 1)))
     println("Actually setA: VertexRDD[Int] should be setA: VertexRDD[Double], but no worries" )
     val rddB: RDD[(VertexId, Double)] = sc.parallelize(0L until 10L).flatMap(id => List((id, 1.0), (id, 2.0)))
-    // There should be 20 entries in rddB,  because above we created 10 entries initially and then created two copies:(id, 1.0) and (id, 2.0)
+    // There should be 20 entries in rddB,  because above we created 10 entries initially and then created two copies for each entry:(id, 1.0) and (id, 2.0)
     println(rddB.count+" entries in rddB")
     //aggregation of setA[Int] and setB[Double] through aggregateUsingIndex will not cause a problem.
     val setB: VertexRDD[Double] = setA.aggregateUsingIndex(rddB, _ + _)
