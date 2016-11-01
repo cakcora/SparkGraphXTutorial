@@ -8,7 +8,6 @@
 object GraphX3GraphOps {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setMaster("local[2]").setAppName("Disagio")
-
     val sc = new SparkContext(conf)
     Logger.getRootLogger().setLevel(Level.ERROR)
     val graph:Graph[(String, String), String] = new GraphX0Builder().createToyGraph(sc)
