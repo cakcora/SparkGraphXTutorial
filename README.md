@@ -1,5 +1,5 @@
 # Spark GraphX Tutorial
-An expanded tutorial of Apache Spark GraphX Library with standalone examples in 13 chapters.
+An expanded tutorial of the Apache Spark GraphX library with standalone examples in 13 chapters.
 
 
 This project hosts the expanded version of the examples given at the official GraphX website.
