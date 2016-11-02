@@ -15,4 +15,4 @@ While working on examples, keep http://spark.apache.org/docs/latest/graphx-progr
 For more information, here is a GraphX book (that has two free chapters): https://www.manning.com/books/spark-graphx-in-action .
 
 
-Other than GraphX, GraphFrames have also been developed for graph ops on Spark. You can find a starting point on GraphFrames here: http://graphframes.github.io/
+Other than GraphX, GraphFrames have also been developed for GraphOps on Spark. You can find a starting point on GraphFrames here: http://graphframes.github.io/
