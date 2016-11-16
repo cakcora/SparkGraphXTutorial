@@ -17,5 +17,6 @@ For more information, here is a GraphX book (that has two free chapters): https:
 
 Other than GraphX, GraphFrames have also been developed for GraphOps on Spark. You can find a starting point on GraphFrames here: http://graphframes.github.io/
 
-**_Issues with GraphX_**
-See https://github.com/cakcora/SparkGraphXTutorial/blob/master/graphX.MD
+**_Issues with GraphX functions_**
+
+ <a href = "https://github.com/cakcora/SparkGraphXTutorial/blob/master/graphX.MD">See this draft page</a>
