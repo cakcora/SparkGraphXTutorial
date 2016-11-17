@@ -11,14 +11,11 @@
     		<p><code>println(gr.numVertices+" "+gr.numEdges)</code></p>
 
     		<p><code>val setA:scala.collection.mutable.Set[(Long,Long)] =scala.collection.mutable.Set[(Long,Long)]()</code></p>
-    		<p><code>val j:Array[Edge[Int]] = gr.edges.collect()</code></p>
+    		<p><code>val j:Array[Edge[Int]] = graph.edges.distinct().collect()</code></p>
 
-    		<p><code>for( x &lt; -j){ </code></p>
-      		<p><code>setA.add(Tuple2(x.srcId,x.dstId))</code></p>
-    		<p><code>}</code></p>
-    		<p><code>val gr2 = Graph.fromEdgeTuples(sc.parallelize(setA.toList),defaultValue = 1,</code></p>
-     		<p><code> uniqueEdges = Some(PartitionStrategy.RandomVertexCut))</code></p>
-       		<p><code>println(gr2.numVertices+" "+gr2.numEdges)</code></p>
+    		 
+    		<p><code>val gr2: Graph[Int, Int]  = Graph.fromEdges(sc.parallelize(j),defaultValue = 1)</code></p>
+     		<p><code>//gr2 is the new cleaned graph</code></p>
 	</li>
 	
 </ul>
