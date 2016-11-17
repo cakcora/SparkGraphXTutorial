@@ -16,6 +16,7 @@
     		 
     		<p><code>val gr2: Graph[Int, Int]  = Graph.fromEdges(sc.parallelize(j),defaultValue = 1)</code></p>
      		<p><code>//gr2 is the new cleaned graph</code></p>
+		<p><code>println(gr2.numVertices+" "+gr2.numEdges)</code></p>
 	</li>
 	
 </ul>
